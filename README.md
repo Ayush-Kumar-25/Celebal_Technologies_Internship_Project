@@ -1,179 +1,117 @@
-# Air Quality Prediction & Analysis
+# Air Quality Prediction System
 
-A machine learning–based project developed during the **CELEBAL Technologies Virtual Internship (1 month)**. The project analyzes WHO air quality data, trains multiple regression models, and provides an interactive **Streamlit dashboard** for prediction and visualization of air pollution metrics.
+A machine learning–based air quality prediction and analysis system developed using WHO air quality data. This project was completed as part of a **CELEBAL Technologies Virtual Internship** during the 7th semester of B.Tech (CSE).
+
+The goal of the project is to analyze air quality indicators and predict pollution levels using multiple machine learning models, followed by deployment through a simple Streamlit web interface.
 
 ---
 
 ## Project Type
 
-Academic Group Project (Virtual Internship)
-
-## Internship Details
-
-* **Organization:** CELEBAL Technologies
-* **Duration:** 1 Month
-* **Semester:** 7th Semester (B.Tech – CSE)
-
-## My Role
-
-* Data preprocessing and cleaning
-* Feature selection and encoding
-* Training and evaluating machine learning models
-* Model comparison and best-model selection
-* Saving trained models for deployment
-
-> **Note:** This was a collaborative internship project. The repository documents my technical contribution and learning outcomes.
+**Academic Group Project (Virtual Internship)**
 
 ---
 
-## Problem Statement
+## My Contribution
 
-To analyze global air quality data and predict pollution levels using machine learning models, while also providing meaningful visual insights and an easy-to-use prediction interface.
-
----
-
-## Dataset
-
-* **Source:** WHO Air Quality Dataset
-* **Format:** Excel (`AirQuality.xlsx`)
-* **Key Features:**
-
-  * PM2.5 (μg/m³)
-  * PM10 (μg/m³)
-  * NO₂ (μg/m³)
-  * WHO Region
-  * Country and City
-  * Measurement Year
+* Performed data cleaning, preprocessing, and exploratory data analysis (EDA)
+* Trained and evaluated multiple machine learning models
+* Compared model performance using R² Score, MAE, and RMSE metrics
+* Selected and saved the best-performing model for deployment
+* Assisted in integrating the trained model with the Streamlit application
 
 ---
 
-## Data Processing
+## Features
 
-* Removed unnecessary and low-coverage columns
-* Handled missing values using mean, forward-fill, and backward-fill strategies
-* Outlier removal using IQR method (PM2.5)
-* Label encoding for categorical features
-* Feature scaling using `StandardScaler`
+* Data preprocessing and feature analysis
+* Multiple ML model comparison
+* Model performance evaluation
+* Interactive Streamlit-based UI for predictions
+* Saved trained model using pickle
 
 ---
 
 ## Machine Learning Models Used
 
-The following regression models were trained and evaluated:
-
 * Linear Regression
-* Polynomial Regression (Degree 2)
 * Random Forest Regressor
 * Gradient Boosting Regressor
 * XGBoost Regressor
 
-### Evaluation Metrics
-
-* R² Score
-* Mean Absolute Error (MAE)
-* Root Mean Squared Error (RMSE)
-
-The best-performing model was selected based on **lowest RMSE** and saved for deployment.
-
 ---
 
-## Visualization & Analysis
+## Tech Stack
 
-* Distribution plots for PM2.5, PM10, and NO₂
-* Box plots for outlier detection
-* Bar charts for WHO region-wise pollution levels
-* Correlation heatmap for numeric features
-* Pollution index comparison across regions
-
----
-
-## Streamlit Dashboard
-
-An interactive dashboard was built using **Streamlit** that allows users to:
-
-* Predict PM2.5 levels based on user inputs
-* View pollution category and pollution index
-* Upload custom datasets (CSV / Excel)
-* Perform exploratory data analysis and visualizations
-
-### Dashboard Features
-
-* Real-time prediction
-* Pollution category classification
-* Interactive charts and heatmaps
-* File upload and analysis support
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* XGBoost
+* Streamlit
 
 ---
 
 ## Project Structure
 
-```text
+```
 CELEBAL-TECHNOLOGIES/
-│
-├── AirQualityPrediction.ipynb   # Model training & analysis notebook
-├── streamlit_app.py             # Streamlit dashboard
-├── AirQuality.xlsx              # Dataset
-├── best_model.pkl               # Saved ML model
-├── scaler.pkl                   # Feature scaler
-├── README.md
+│── AirQualityPrediction.ipynb
+│── streamlit_app.py
+│── model.pkl
+│── requirements.txt
+│── README.md
 ```
 
 ---
 
-## Setup Instructions
+## How to Run the Project Locally
 
-### 1. Create Virtual Environment
-
-```bash
-python -m venv venv
-```
-
-### 2. Activate Environment
-
-* **Windows**
+1. Clone the repository
 
 ```bash
-venv\Scripts\activate
+git clone https://github.com/Ayush-Kumar-25/CELEBAL-TECHNOLOGIES.git
 ```
 
-* **Linux / macOS**
+2. Navigate to the project directory
 
 ```bash
-source venv/bin/activate
+cd CELEBAL-TECHNOLOGIES
 ```
 
-### 3. Install Dependencies
+3. Install dependencies
 
 ```bash
-pip install pandas numpy matplotlib seaborn scikit-learn xgboost streamlit openpyxl
+pip install -r requirements.txt
 ```
 
-### 4. Run Streamlit App
+4. Run the Streamlit application
 
 ```bash
 streamlit run streamlit_app.py
 ```
 
-The application will run at:
-
-```
-http://localhost:8501
-```
+The application will be available at `http://localhost:8501/`.
 
 ---
 
-## Learning Outcomes
+## Dataset
 
-* End-to-end machine learning workflow
-* Feature engineering and model evaluation
-* Model persistence using pickle
-* Building ML-powered dashboards using Streamlit
-* Working with real-world air quality datasets
+* WHO Air Quality Dataset
+* Dataset was used strictly for academic and learning purposes
+
+---
+
+## Notes
+
+* This project was developed for learning and internship evaluation purposes
+* It does not represent a production-grade system
+* Future improvements may include real-time data ingestion and advanced model optimization
 
 ---
 
 ## License
 
-This project was developed as part of an academic internship. The license and usage follow internship and educational guidelines.
-
-
+This project is licensed under the **MIT License**.
