@@ -72,13 +72,13 @@ CELEBAL-TECHNOLOGIES/
 1. Clone the repository
 
 ```bash
-git clone https://github.com/Ayush-Kumar-25/CELEBAL-TECHNOLOGIES.git
+git clone https://github.com/Ayush-Kumar-25/Celebal_Technologies_Internship_Project.git
 ```
 
 2. Navigate to the project directory
 
 ```bash
-cd CELEBAL-TECHNOLOGIES
+cd Celebal_Technologies_Internship_Project
 ```
 
 3. Install dependencies
