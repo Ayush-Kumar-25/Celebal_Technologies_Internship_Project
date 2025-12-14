@@ -57,7 +57,7 @@ The goal of the project is to analyze air quality indicators and predict polluti
 ## Project Structure
 
 ```
-CELEBAL-TECHNOLOGIES/
+Celebal_Technologies_Internship_Project/
 │── AirQualityPrediction.ipynb
 │── streamlit_app.py
 │── model.pkl
